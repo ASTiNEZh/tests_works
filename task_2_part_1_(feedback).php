@@ -14,9 +14,6 @@
 			Как Вас зовут?
 			<br>
 			<input v-on:input="read_name ($event.target.value)" type="text" placeholder="ФИО" name="name" required>
-			{{ name }}
-			{{ phone }}
-			{{ dom }}
 			<br>
 			Куда нам слать для Вас валентинки?
 			<br>
@@ -26,7 +23,6 @@
 			<br>
 			<input type="text" placeholder="email" name="email">
 			<input v-on:input="read_dom ($event.target.value)" type="text" placeholder="почтовый домен (@gmail.com)" name="dom">
-
 			<br>
 			<input v-on:input="read_phone ($event.target.value)" type="text" placeholder="Мобильный телефон" name="phone" required>
 			<br>
