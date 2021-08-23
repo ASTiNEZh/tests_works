@@ -51,14 +51,14 @@
 			$dom = $_POST['dom'];
 			$phone = $_POST['phone'];
 			$comment = $_POST['comment'];
-			$file = $_POST[''];
+			$file = $_POST['file'];
 
 			if($dom == "@gmail.com"){
 				exit();
 			}
 			if($name != '' and $phone != "")
 			{
-				$count_comment = mysqli_query($connection, "INSERT INTO `feedback` (`comment`, `name`, `adres`, `email`, `phone`) VALUES ('$comment', '$name', '$adres', '$email', '$phone')");
+				$count_comment = mysqli_query($connection, "INSERT INTO `feedback` (`comment`, `name`, `adres`, `email`, `phone`, `file`) VALUES ('$comment', '$name', '$adres', '$email', '$phone', '$file')");
 			} else{
 				exit();
 			}
