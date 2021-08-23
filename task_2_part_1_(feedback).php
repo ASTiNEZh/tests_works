@@ -10,7 +10,7 @@
 			<!-- подключение Vue.js -->
 		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
-		<form id="read" method="POST" action="feedback.php">
+		<form id="form" method="POST" action="feedback.php">
 				<!-- Поле: ФИО (с проверкой на клиенте через фрейм Vue.js)-->
 			Как Вас зовут?
 			<br>
