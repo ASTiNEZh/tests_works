@@ -1,23 +1,23 @@
 
 new Vue({
-	el: '#read',
+	el: '#form',
 	data: {
 		name: "",
 		phone: "",
-		dom: ''
+		dom: '' //доменн почт. ящика
 	},
 	methods:{
 
-		read_name (text) {
+		read_name (text) { //считывание инпута ФИО
 			this.name = text
 		},
-		read_phone (numbers) {
+		read_phone (numbers) { //считывание инпута телефона
 			this.phone = numbers
 		},
-		read_dom (adres) {
+		read_dom (adres) { //считывание домена мыла
 			this.dom = adres
 		},
-		chek () {
+		chek () { //клиентская проверка необходимых полей (не пустые ФИО и телефон; мыло не гугловое)
 			if (this.name == '' || this.phone == '') {
 				alert ('ФИО и телефон обязательны к заполнению')
 			}
